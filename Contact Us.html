@@ -1,0 +1,136 @@
+<html>
+
+<head>
+
+<title>TOURISM IN JAPAN: Contact Us</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+function validate()
+{
+var name1 = document.getElementById("name").value;
+var phone1 = document.getElementById("phone").value;
+var email1 = document.getElementById("email").value;
+var message1 = document.getElementById("message").value;
+
+if (name1.length<5)
+       {
+           text="Please Enter Full Name";
+             error.innerHTML=text;
+             return false;
+         }
+if(isNaN(phone1) || phone1.length!= 10)
+       {
+           text="Please Enter Correct Phone Number";
+             error.innerHTML=text;
+             return false;
+         }
+if(email1.indexOf("@") == -1 || email.length < 6)
+       {
+           text="Please Enter Correct Email";
+             email.innerHTML=text;
+             return false;
+         }
+alert("Form Submitted Successfully!");
+return true;
+}
+</script>
+<style>
+
+header{text-align:center; background-color:LightGreen; height:100px; position:sticky; top:0;}
+
+footer{text-align:right; background-color:LightGray; height:100px;font-size:20px;}
+
+ul{list-style-type:none;}
+.Edit{display:inline-block;margin-left:100px;margin-right:100px;}
+
+
+header h1 {font-size:35px;}
+nav{font-size:25px;}
+
+
+nav{width:100%;text-align:center;}
+nav ul li a{text-decoration:none;color:black;position:relative;}
+nav ul li a:hover{color:red;}
+nav a::before{content:''; display:block; height:4px; background-color:brown; position:absolute; top:0; left:0; width:0%; transition: all ease-in-out 250ms;}
+nav a:hover::before{width:100%;}
+
+#myform{border:2px groove black; padding:10px; text-align:center; background-color:LightSteelBlue;margin:150px 0px;}
+
+input,textarea{background-color:CornflowerBlue;text-color:black; margin:10px; padding:10px}
+#submit{color:blue;}
+textarea{height:100px}
+#error{font-weight:bold; color:red; font-size:20px;}
+
+</style>
+
+</head>
+
+<body>
+
+<header><h1>CONTACT US</h1>
+
+<nav>
+<ul>
+<li class="Edit"><a href="index.html">Home</a></li>
+<li class="Edit"><a href="Places to Visit.html">Places to Visit</a></li>
+<li class="Edit"><a href="Hotels.html">Hotels</a></li>
+<li class="Edit"><a href="Food.html">Food</a></li>
+<li class="Edit"><a href="Contact Us.html">Contact Us</a></li>
+</ul>
+</nav>
+
+</header>
+
+<main class="mainclass">
+
+<div>
+
+	<form id="myform" onsubmit="return validate();"> 
+
+		<div>
+
+			<input type="text" placeholder="Name" id="name">
+
+		</div>
+
+		<div>
+
+			<input type="text" placeholder="Phone" id="phone">
+
+		</div>
+		<div>
+
+			<input type="text" placeholder="Email" id="email">
+
+		</div>
+
+		<div>
+
+			<textarea placeholder="Message" id="message"></textarea>
+		</div>
+		<div>
+
+			<input type="Submit" id="submit">
+
+		</div>
+		<div id="error">
+
+		</div>
+		
+	</form>
+
+</div>
+
+</main>
+<br><br><br><br><br>
+<footer>
+	<p>Made by Anirudh Bhat</p>
+	To know more about Japan, <a href="https://en.wikipedia.org/wiki/Japan">click here</a>
+</footer>
+
+</body>
+
+</html>
