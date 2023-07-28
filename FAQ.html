@@ -1,0 +1,128 @@
+<html>
+
+<head>
+
+<title>TOURISM IN JAPAN: FAQs</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+</script>
+
+<script type = "text/javascript">
+$(document).ready(function ()
+{
+$('.Questions').click(function() {
+var $answer = $(this).find('.AnsDiv');
+    if($answer.hasClass('open')) { 
+      $answer.removeClass('open');
+     
+      $answer.slideUp();
+      
+     
+      $(this).find('span').text('+');
+      
+    } else {
+      $answer.addClass('open'); 
+
+      $answer.slideDown();
+      
+      $(this).find('span').text('-');
+}
+});
+});
+</script>
+<style>
+
+header{text-align:center; background-color:LightGreen; height:100px;}
+
+footer{text-align:right; background-color:LightGray; height:100px;font-size:20px;}
+
+
+header h1 {font-size:35px;}
+nav{font-size:25px;}
+
+ul{list-style-type:none;width:100%;padding:0;}
+.Edit{display:inline-block;margin-right:5%;margin-left:5%;}
+
+nav{width:100%;text-align:center;}
+nav ul li a{text-decoration:none;color:black;position:relative;}
+nav ul li a:hover{color:red;}
+nav a::before{content:''; display:block; height:4px; background-color:brown; position:absolute; top:0; left:0; width:0%; transition: all ease-in-out 250ms;}
+nav a:hover::before{width:100%;}
+
+h2{text-align:center; font-size:30px;}
+
+.MainDiv{text-align:center; background-color:LightCoral; border:2px solid black; margin-top:150px; margin-bottom:300px;}
+
+.Questions h3{display:inline-block;}
+span{margin-left:30px;}
+.AnsDiv{display:none; padding:10px;}
+</style>
+
+</head>
+
+<body>
+
+<header><h1>FAQs</h1>
+
+<nav>
+<ul>
+<li class="Edit"><a href="index.html">Home</a></li>
+<li class="Edit"><a href="Places to Visit.html">Places to Visit</a></li>
+<li class="Edit"><a href="Hotels.html">Hotels</a></li>
+<li class="Edit"><a href="Food.html">Food</a></li>
+<li class="Edit"><a href="Contact Us.html">Contact Us</a></li>
+<li class="Edit"><a href="FAQ.html">FAQs</a></li>
+</ul>
+</nav>
+
+</header>
+
+<main>
+
+<h2>Frequently Asked Questions</h2>
+
+<div class="MainDiv">
+<ul>
+<li class="Questions"><h3>How many days should I spend in Japan?</h3><span>+</span>
+<div class="AnsDiv">
+<p>8-15 days minimum</p>
+</div>
+</li>
+
+<li class="Questions"><h3>Which is the best time of the year to visit Japan?</h3><span>+</span>
+<div class="AnsDiv">
+<p>Spring (March to May) is the best time (also the peak time) to visit most of Japan for pleasant weather and cherry blossom, typically in Tokyo and Kyoto.<br><Br>
+
+Generally speaking, the best time to visit Japan is spring, followed by autumn (September to November). With comfortable weather, you could appreciate stunning natural beauty: the iconic cherry blossom in spring and colourful leaves in autumn.<Br><Br>
+
+If you're willing to risk possible rainy days and hot weather (around 31°C/86°F), summer (June to August) is a perfect time to have a taste of exotic Japanese festivals and enjoy plenty of firework displays.<br><Br>
+
+However, the rainy season usually lasts from June to mid-July, when you can find the lowest prices and smaller crowds.<br><Br>
+
+Winter (December to February) is ideal for seeing snow monkeys, enjoying a hot spring dip, and going skiing.</p>
+</div>
+</li>
+
+<li class="Questions"><h3>How should I plan when and where to visit?</h3><span>+</span>
+<div class="AnsDiv">
+<p>Make a fixed itinerary and PRE-BOOK tickets to all places and attraction when needed.</p>
+</div>
+</li>
+
+
+
+</ul>
+</div>
+
+</main>
+
+<footer>
+	<p>Made by Anirudh Bhat</p>
+	To know more about Japan, <a href="https://en.wikipedia.org/wiki/Japan">click here</a>
+</footer>
+
+</body>
+
+</html>
